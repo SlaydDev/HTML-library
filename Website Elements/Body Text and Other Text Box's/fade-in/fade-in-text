@@ -5,26 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fading Paragraph</title>
 <style>
-  body { font-family:sans-serif; background:#111; color:#fff; padding:50px; }
-  p {
-    font-size:1.2rem;
-    line-height:1.8;
-    opacity:0;
-    animation:fadeIn 2s ease forwards;
-  }
-  p:nth-child(1) { animation-delay:0.5s; }
-  p:nth-child(2) { animation-delay:1.5s; }
-  p:nth-child(3) { animation-delay:2.5s; }
+body { 
+  font-family: sans-serif; 
+  background: #111; 
+  color: #fff; 
+  padding: 50px; 
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+p:nth-child(1) { animation-delay: 0.5s; }
+p:nth-child(2) { animation-delay: 1.5s; }
+p:nth-child(3) { animation-delay: 2.5s; }
 
-  @keyframes fadeIn {
-    from { opacity:0; transform: translateY(20px); }
-    to { opacity:1; transform: translateY(0); }
-  }
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
 </style>
 </head>
 <body>
-  <p>[PARAGRAPH_1]</p>
-  <p>[PARAGRAPH_2]</p>
-  <p>[PARAGRAPH_3]</p>
+<p>[PARAGRAPH_1]</p>
+<p>[PARAGRAPH_2]</p>
+<p>[PARAGRAPH_3]</p>
+
+<!-- Made by Slayd Dev -->
+<div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: sans-serif;">
+Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+</div>
+
 </body>
 </html>
