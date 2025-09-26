@@ -5,27 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Custom Cursor</title>
 <style>
-  body { cursor:none; font-family:sans-serif; background:#111; color:#fff; height:100vh; display:flex; justify-content:center; align-items:center; }
-  .cursor {
-    width:20px; height:20px;
-    border:2px solid #3b82f6;
-    border-radius:50%;
-    position:absolute;
-    transform:translate(-50%, -50%);
-    pointer-events:none;
-    transition: transform 0.1s ease;
-  }
+body { 
+  cursor: none; 
+  font-family: sans-serif; 
+  background: #111; 
+  color: #fff; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.cursor {
+  width: 20px; 
+  height: 20px;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+}
 </style>
 </head>
 <body>
-  <div class="cursor"></div>
-  <p>Hover and move your mouse around!</p>
-  <script>
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener('mousemove', e => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-    });
-  </script>
+<div class="cursor"></div>
+<p>Hover and move your mouse around!</p>
+
+<script>
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+</script>
+
+<!-- Made by Slayd Dev -->
+<div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: sans-serif;">
+Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+</div>
+
 </body>
 </html>
