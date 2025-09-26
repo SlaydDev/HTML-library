@@ -23,5 +23,11 @@ body, html { margin:0; padding:0; height:100%; font-family:sans-serif; }
     <p>[SUBTITLE_HERE]</p>
   </div>
 </div>
+
+<!-- Made by Slayd Dev -->
+<div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: sans-serif;">
+Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+</div>
+
 </body>
 </html>
