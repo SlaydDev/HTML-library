@@ -62,14 +62,8 @@
     }
 
     @keyframes fadeInText {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -83,6 +77,9 @@
     </div>
   </div>
 
-  <!-- Designed by Slayd Dev (https://github.com/slayddev) -->
+  <!-- Made by Slayd Dev -->
+  <div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: sans-serif;">
+  Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+  </div>
 </body>
 </html>
