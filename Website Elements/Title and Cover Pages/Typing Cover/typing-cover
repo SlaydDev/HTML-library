@@ -5,13 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Typing Cover</title>
 <style>
-  body, html { margin:0; padding:0; height:100%; font-family: monospace; display:flex; justify-content:center; align-items:center; background:#111; color:#0f0; }
-  .typing { font-size:3rem; white-space:nowrap; overflow:hidden; border-right:0.15em solid #0f0; animation: typing 4s steps(20) 1s forwards, blink 0.75s step-end infinite; }
-  @keyframes typing { from { width:0 } to { width:100% } }
-  @keyframes blink { 50% { border-color: transparent; } }
+body, html { 
+  margin:0; padding:0; height:100%; 
+  font-family: monospace; 
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  background:#111; 
+  color:#0f0; 
+}
+.typing { 
+  font-size:3rem; 
+  white-space:nowrap; 
+  overflow:hidden; 
+  border-right:0.15em solid #0f0; 
+  animation: typing 4s steps(20) 1s forwards, blink 0.75s step-end infinite; 
+}
+@keyframes typing { from { width:0 } to { width:100% } }
+@keyframes blink { 50% { border-color: transparent; } }
 </style>
 </head>
 <body>
-  <div class="typing">[YOUR_TITLE_HERE]</div>
+<div class="typing">[YOUR_TITLE_HERE]</div>
+
+<!-- Made by Slayd Dev -->
+<div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: monospace;">
+Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+</div>
+
 </body>
 </html>
