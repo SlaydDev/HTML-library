@@ -5,26 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gradient Hero</title>
 <style>
-  body, html { margin:0; padding:0; height:100%; font-family:sans-serif; }
-  .hero {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-    color:white;
-    text-align:center;
-    padding:20px;
-  }
-  .hero h1 { font-size:4rem; margin-bottom:1rem; }
-  .hero p { font-size:1.5rem; opacity:0.85; }
+body, html { margin:0; padding:0; height:100%; font-family:sans-serif; }
+.hero {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.hero h1 { font-size:4rem; margin-bottom:1rem; }
+.hero p { font-size:1.5rem; opacity:0.85; }
 </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>[YOUR_TITLE_HERE]</h1>
-    <p>[YOUR_SUBTITLE_HERE]</p>
-  </div>
+<div class="hero">
+  <h1>[YOUR_TITLE_HERE]</h1>
+  <p>[YOUR_SUBTITLE_HERE]</p>
+</div>
+
+<!-- Made by Slayd Dev -->
+<div style="position: fixed; bottom: 5px; right: 10px; color: #aaa; font-size: 12px; font-family: sans-serif;">
+Made by <a href="https://github.com/slayddev" target="_blank" style="color:#3b82f6;">Slayd Dev</a>
+</div>
+
 </body>
 </html>
