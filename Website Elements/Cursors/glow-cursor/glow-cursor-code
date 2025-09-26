@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collapsible Box</title>
+<style>
+body { font-family:sans-serif; display:flex; justify-content:center; align-items:center; height:100vh; background:#111; margin:0; }
+.collapsible { cursor:pointer; padding:10px 15px; background:#3b82f6; border:none; color:white; border-radius:5px; }
+.content { max-height:0; overflow:hidden; transition:max-height 0.3s ease; background:#222; padding:0 15px; }
+</style>
+</head>
+<body>
+<button class="collapsible">[TITLE_HERE]</button>
+<div class="content">
+<p>[CONTENT_HERE]</p>
+</div>
+<script>
+const coll = document.querySelectorAll('.collapsible');
+coll.forEach(btn => btn.addEventListener('click', () => {
+  const content = btn.nextElementSibling;
+  content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+}));
+</script>
+</body>
+</html>
